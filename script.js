@@ -343,7 +343,6 @@ if (typingRole) {
         "an IT Student",
         "a Developer",
         "a Designer",
-        "a Tech Girly",
         "a Coder",
         "a Programmer",
     ];
