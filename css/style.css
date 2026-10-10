@@ -23,6 +23,11 @@ body {
     overflow-x: hidden;
 }
 
+.conainer {
+    max-width: 100%;
+    max-width: 100%;
+    box-sizing:border-box
+}
 
 /* =========================
    NAVIGATION
@@ -112,15 +117,14 @@ header {
 
 .hero {
     min-height: 100vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
     padding: 120px 30px 60px;
-
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .hero-content {
@@ -877,26 +881,20 @@ header {
 .game-container,
 .typing-container {
     max-width: 700px;
-
     margin: 0 auto 40px;
-
     padding: 30px;
-
     text-align: center;
 }
 
 .game-container h3,
 .typing-container h3 {
     font-size: 28px;
-
     color: #e9d5ff;
-
     margin-bottom: 10px;
 }
 
 .game-container > p {
     color: #aaa;
-
     margin-bottom: 20px;
 }
 
@@ -1143,6 +1141,9 @@ footer {
 /* Keep the typing section from causing page-wide horizontal scrolling */
 html,
 body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     max-width: 100%;
-    overflow-x: clip;
+    overflow-x: hidden;
 }
