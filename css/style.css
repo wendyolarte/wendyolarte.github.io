@@ -9,20 +9,25 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background:
-        radial-gradient(circle at top left, rgba(168, 85, 247, 0.25), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.15), transparent 35%),
-        #10051f;
-    color: white;
-    min-height: 100vh;
-    max-width: 50%;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Segoe UI", sans-serif;
 }
 
 .conainer {
     max-width: 100%;
     max-width: 100%;
     box-sizing:border-box
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 /* =========================
