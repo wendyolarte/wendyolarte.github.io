@@ -1181,17 +1181,17 @@ body {
     /* Make sections fit the phone screen */
     section,
     footer {
-        max-width: 100%;
+        max-width: 75%;
     }
 
     /* Prevent images and cards from overflowing */
     img,
     canvas {
-        max-width: 100%;
+        max-width: 75%;
     }
 
     /* Leave space for the fixed navbar */
     #home {
-        padding-top: 100px;
+        padding-top: 75px;
     }
 }
