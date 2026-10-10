@@ -272,7 +272,6 @@ header {
     transform: translateY(-4px);
 }
 
-
 /* =========================
    ABOUT
 ========================= */
@@ -393,7 +392,6 @@ header {
     font-weight: bold;
 }
 
-
 /* =========================
    SKILLS
 ========================= */
@@ -454,7 +452,6 @@ header {
     width: 80%;
 }
 
-
 /* =========================
    PROJECTS
 ========================= */
@@ -504,7 +501,6 @@ header {
     border-radius: 20px;
     font-size: 12px;
 }
-
 
 /* =========================
    STUDY AREA
@@ -597,7 +593,6 @@ header {
     font-size: 16px;
     cursor: pointer;
 }
-
 
 /* =====================================
    MONKEYTYPE-INSPIRED TYPING TEST
@@ -1105,14 +1100,11 @@ footer {
     .about-info {grid-template-columns: 1fr;}
     .hero h1 {font-size: 55px;}
     .typing-role {font-size: 20px;}
-    .profile-img {
-        width: 130px;
-        height: 130px;
-    }
+    .profile-img {width: 30px;height: 130px;}
     #gameArea {height: 350px;}
 }
 
-/* FINAL TYPING LAB OVERFLOW FIX */
+/* TYPING LAB OVERFLOW */
 .typing-test-section,
 .typing-test-container,
 .typing-toolbar,
@@ -1144,4 +1136,62 @@ body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+}
+
+
+/* FIX MOBILE SCREEN WIDTH AND NAVBAR */
+@media screen and (max-width: 768px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    body {
+        min-width: 0;
+    }
+
+    /* Keep navbar visible while scrolling */
+    header {
+        position: fixed ;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        z-index: 9999;
+        transform: none;
+    }
+
+    .navbar {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    /* Make sections fit the phone screen */
+    section,
+    footer {
+        max-width: 100%;
+    }
+
+    /* Prevent images and cards from overflowing */
+    img,
+    canvas {
+        max-width: 100%;
+    }
+
+    /* Leave space for the fixed navbar */
+    #home {
+        padding-top: 100px;
+    }
 }
