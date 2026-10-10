@@ -408,6 +408,9 @@ if (
     timeDisplay
 ) {
     const wordBank = [
+        "No institution can possibly survive if it needs geniuses or supermen to manage it. It must be organized in such a way as to be able to get along under a leadership composed of average human beings. — Peter Drucker", 
+        "But the fact that some geniuses were laughed at does not imply that all who are laughed at are geniuses. They laughed at Columbus, they laughed at Fulton, they laughed at the Wright Brothers. But they also laughed at Bozo the Clown. — Carl Sagan",
+        "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. — Steve Jobs",
         "creative", "technology", "knowledge", "ideas",
         "function", "butterfly", "motivate", "website",
         "strategy", "computer", "design", "future",
