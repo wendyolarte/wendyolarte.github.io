@@ -4,12 +4,20 @@
     box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+html {
+    scroll-behavior: smooth;
+   
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(168, 85, 247, 0.25), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.15), transparent 35%),
+        #10051f;
+    color: white;
+    min-height: 100vh;
+    max-width: 75%;
 }
 
 .conainer {
@@ -18,17 +26,10 @@ html, body {
     box-sizing:border-box
 }
 
-.hero {
-    width: 100%;
-    min-height: 100vh;
-    margin: 0;
-    padding: 60px 20px;
-    box-sizing: border-box;
-}
-
 /* =========================
    NAVIGATION
 ========================= */
+
 header {
     position: fixed;
     top: 0;
@@ -41,12 +42,13 @@ header {
 }
 
 .navbar {
-    max-width: 100%;
+    max-width: 1200px;
     margin: auto;
-    padding: 16px 24px;
+    padding: 20px 30px;
+
     display: flex;
     justify-content: space-between;
-    align-items: Right;
+    align-items: center;
 }
 
 .logo {
@@ -83,7 +85,7 @@ header {
 ========================= */
 
 .section {
-    max-width: 100%;
+    max-width: 1200px;
     margin: auto;
     padding: 110px 30px;
 }
@@ -1057,8 +1059,6 @@ header {
 ========================= */
 
 footer {
-    width: 100%;
-    max-width: none;
     text-align: center;
     padding: 40px 20px;
     border-top:1px solid rgba(255, 255, 255, 0.08);
