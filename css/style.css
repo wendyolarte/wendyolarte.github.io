@@ -1,0 +1,1148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(168, 85, 247, 0.25), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.15), transparent 35%),
+        #10051f;
+
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(16, 5, 31, 0.75);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 15px #a855f7;
+}
+
+.logo span {
+    color: #c084fc;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c084fc;
+    text-shadow: 0 0 10px #a855f7;
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 110px 30px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.section-title span {
+    color: #c084fc;
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.7);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 50px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 120px 30px 60px;
+
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #a855f7;
+    box-shadow:
+        0 0 20px #a855f7,
+        0 0 50px rgba(168, 85, 247, 0.4);
+    transition: 0.4s;
+}
+
+.profile-img:hover {
+    transform: scale(1.08) rotate(3deg);
+    box-shadow:
+        0 0 30px #c084fc,
+        0 0 70px rgba(168, 85, 247, 0.7);
+}
+
+.hello {
+    color: #c084fc;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 9vw, 100px);
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.first-name {
+    color: white;
+    text-shadow:
+        0 0 10px #a855f7,
+        0 0 25px #a855f7,
+        0 0 45px #c084fc;
+}
+
+.hidden-e {
+    color: #c084fc;
+    opacity: 0.35;
+    text-shadow:
+        0 0 8px #a855f7,
+        0 0 18px #a855f7;
+    transition: 0.3s;
+}
+
+.hero h1:hover .hidden-e {
+    opacity: 1;
+    text-shadow:
+        0 0 10px #a855f7,
+        0 0 25px #c084fc,
+        0 0 40px #ec4899;
+}
+
+.last-name {
+    color: #c084fc;
+    text-shadow:
+        0 0 15px rgba(192, 132, 252, 0.7);
+}
+
+.typing-role {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #e9d5ff;
+}
+
+.typing-role span {
+    color: #c084fc;
+    text-shadow:
+        0 0 15px rgba(192, 132, 252, 0.8);
+    border-right: 3px solid #c084fc;
+    padding-right: 5px;
+    animation: blinkCursor 0.7s infinite;
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.hero-description {
+    max-width: 600px;
+    margin: auto;
+    color: #bbb;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, #7e22ce, #a855f7);
+    color: white;
+    border: none;
+    box-shadow:0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+.primary-btn:hover {
+    transform: translateY(-4px);
+    box-shadow:0 0 30px rgba(168, 85, 247, 0.8);
+}
+
+.secondary-btn {
+    color: #c084fc;
+    border: 1px solid #a855f7;
+    background: transparent;
+}
+
+.secondary-btn:hover {
+    background: rgba(168, 85, 247, 0.15);
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.about-card,
+.info-box,
+.account-card,
+.skill-card,
+.project-card,
+.study-card,
+.contact-card,
+.typing-container,
+.game-container {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    transition: 0.4s;
+}
+
+.about-card {
+    padding: 35px;
+}
+
+.about-card h3 {
+    color: #c084fc;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-card p {
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.info-box {
+    padding: 25px;
+    text-align: center;
+}
+
+.info-box:hover,
+.about-card:hover {
+    transform: translateY(-8px);
+    border-color: #a855f7;
+    box-shadow:
+        0 0 25px rgba(168, 85, 247, 0.25);
+}
+
+.info-box span {
+    font-size: 35px;
+}
+
+.info-box h3 {
+    margin: 10px 0;
+    color: #e9d5ff;
+}
+
+.info-box p {
+    color: #aaa;
+}
+
+
+/* =========================
+   ACCOUNTS
+========================= */
+
+.accounts-grid {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 20px;
+}
+
+.account-card {
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.account-card:hover {
+    transform: translateY(-10px);
+    border-color: #a855f7;
+    box-shadow:0 0 30px rgba(168, 85, 247, 0.35);
+}
+
+.account-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.account-card h3 {
+    margin-bottom: 10px;
+    color: #e9d5ff;
+}
+
+.account-card p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.account-card span {
+    color: #c084fc;
+    font-weight: bold;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    padding: 30px;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: #a855f7;
+    box-shadow:0 0 25px rgba(168, 85, 247, 0.3);
+}
+
+.skill-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.skill-card h3 {
+    margin-bottom: 15px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #7e22ce, #c084fc
+    );
+}
+
+.html {
+    width: 80%;
+}
+
+.css {
+    width: 75%;
+}
+
+.javascript {
+    width: 60%;
+}
+
+.problem {
+    width: 80%;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    padding: 30px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #a855f7;
+    box-shadow:0 0 30px rgba(168, 85, 247, 0.3);
+}
+
+.project-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    color: #e9d5ff;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #aaa;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tags span {
+    background: rgba(168, 85, 247, 0.15);
+    color: #c084fc;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+
+/* =========================
+   STUDY AREA
+========================= */
+
+.study-grid {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.study-card {
+    position: relative;
+    padding: 30px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    transition: 0.4s ease;
+}
+
+.study-card:hover {
+    transform:translateY(-10px)scale(1.02);
+    border-color: #a855f7;
+    box-shadow:0 0 30px rgba(168, 85, 247, 0.4);
+}
+
+.study-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.study-card h3 {
+    color: #e9d5ff;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.study-card p {
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.study-card span {
+    color: #c084fc;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.study-card:hover span {
+    color: #f0abfc;
+    letter-spacing: 1px;
+}
+
+.skill-percentage {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* =========================
+   GAMES
+========================= */
+
+#butterflyCanvas {
+    display: block;
+    max-width: 100%;
+    background: linear-gradient(#b8e8ff, #f5e6ff);
+    border: 3px solid #a855f7;
+    border-radius: 12px;
+}
+
+#flapButton {
+    margin-top: 10px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    background: #a855f7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* =====================================
+   MONKEYTYPE-INSPIRED TYPING TEST
+===================================== */
+.monkey-typing-text {
+    position: relative;
+    display: block;
+    width: 70%;
+    max-width: 70%;
+    min-width: 50%;
+    height: 230px;
+    padding: 20px 8px;
+    box-sizing: border-box;
+    overflow: none;
+    white-space: normal;
+    overflow-wrap: none;
+    word-break: normal;
+    color: #aaa3ba;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: clamp(16px, 2vw, 25px);
+    line-height: 1.9;
+    letter-spacing: 0.5px;
+}
+
+.monkey-typing-text .typing-word {
+    display: inline;
+    white-space: normal;
+    overflow-wrap: none;
+}
+
+.typing-test-section {
+    padding: 90px 20px;
+    background: #171520;
+    color: #e8e4f3;
+}
+
+.typing-test-container {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.typing-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.typing-label {
+    color: #b68aff;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.typing-heading h2 {
+    font-size: clamp(28px, 5vw, 44px);
+    margin-bottom: 12px;
+    color: #f4efff;
+}
+
+.typing-heading h2 span {
+    color: #b68aff;
+}
+
+.typing-heading > p:last-child {
+    color: #9992aa;
+    font-size: 14px;
+}
+
+.typing-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    padding: 18px 20px;
+    background: #211e2d;
+    border-radius: 12px;
+}
+
+.typing-modes {
+    display: flex;
+    gap: 8px;
+}
+
+.mode-btn {
+    border: none;
+    padding: 9px 17px;
+    border-radius: 7px;
+    background: #302b3e;
+    color: #aaa2bb;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.mode-btn:hover,
+.mode-btn.active {
+    background: #b68aff;
+    color: #21152e;
+}
+
+.typing-live-stats {
+    display: flex;
+    gap: 25px;
+}
+
+.typing-live-stats div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.typing-live-stats span,
+.result-grid span {
+    font-size: 9px;
+    color: #9992aa;
+    letter-spacing: 1px;
+}
+
+.typing-live-stats strong {
+    font-size: 20px;
+    color: #b68aff;
+    font-weight: 700;
+}
+
+
+.monkey-typing-text {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    white-space: normal;
+}
+
+
+.monkey-typing-text .letter {
+    position: relative;
+}
+
+.monkey-typing-text .letter.correct {
+    color: #aaa3ba;
+}
+
+.monkey-typing-text .letter.incorrect {
+    color: #ff647c;
+    background: rgba(255, 100, 124, 0.12);
+    border-radius: 3px;
+}
+
+
+.monkey-typing-text .letter.current {
+    color: #ffffff;
+    border-left: 2px solid #b68aff;
+    margin-left: -2px;
+    animation: typingCaret 1s steps(2, start) infinite;
+}
+
+@keyframes typingCaret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.typing-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    border-top: 1px solid #302b3e;
+}
+
+#typingMessage {
+    color: #9992aa;
+    font-size: 13px;
+}
+
+.typing-restart {
+    border: 1px solid #514565;
+    background: #282335;
+    color: #c8a8ff;
+    border-radius: 8px;
+    padding: 10px 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.typing-restart:hover {
+    background: #b68aff;
+    color: #21152e;
+    transform: translateY(-2px);
+}
+
+.typing-hidden-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.typing-hint {
+    margin-top: 25px;
+    text-align: center;
+    color: #716b80;
+    font-size: 12px;
+}
+
+.typing-results {
+    margin-top: 25px;
+    padding: 28px;
+    border: 1px solid #514565;
+    border-radius: 14px;
+    background: #211e2d;
+    text-align: center;
+}
+
+.typing-results h3 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #f4efff;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.result-grid div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px 8px;
+    background: #2b2639;
+    border-radius: 10px;
+}
+
+.result-grid strong {
+    font-size: clamp(22px, 4vw, 32px);
+    color: #b68aff;
+}
+
+@media (max-width: 600px) {
+    .typing-test-section {
+        padding: 60px 16px;
+    }
+
+    .typing-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .typing-live-stats {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .monkey-typing-text {
+        min-height: 220px;
+        font-size: 19px;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.game-container,
+.typing-container {
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+.game-container h3,
+.typing-container h3 {
+    font-size: 28px;
+
+    color: #e9d5ff;
+
+    margin-bottom: 10px;
+}
+
+.game-container > p {
+    color: #aaa;
+
+    margin-bottom: 20px;
+}
+
+#gameArea {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 20px;
+    background:linear-gradient(180deg, #241341, #5c3c8f);
+    border: 2px solid #a855f7;
+    box-shadow:inset 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+#cat {
+    position: absolute;
+    left: 100px;
+    top: 180px;
+    font-size: 45px;
+    z-index: 5;
+    filter: brightness(0) invert(1);
+    user-select: none;
+}
+
+#pipeTop,
+#pipeBottom {
+    position: absolute;
+    right: -80px;
+    width: 70px;
+    background: linear-gradient(90deg, #7e22ce, #c084fc);
+    border: 2px solid #e9d5ff;
+    border-radius: 10px;
+}
+
+#pipeTop {
+    height: 100px;
+    top: 0;
+}
+
+#pipeBottom {
+    height: 150px;
+    bottom: 0;
+}
+
+#gameScore {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 10;
+    text-shadow: 0 0 10px #000;
+}
+
+
+/* =========================
+   TYPING TEST
+========================= */
+.typing-container p {
+    color: #ccc;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+#typingInput {
+    width: 100%;
+    resize: none;
+    padding: 18px;
+    border-radius: 15px;
+    border: 1px solid rgba(168, 85, 247, 0.5);
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
+    font-family: inherit;
+    outline: none;
+}
+
+#typingInput:focus {
+    border-color: #c084fc;
+    box-shadow:
+        0 0 20px rgba(168, 85, 247, 0.25);
+}
+
+.typing-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 25px;
+}
+
+.typing-stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.typing-stats strong {
+    font-size: 30px;
+    color: #c084fc;
+}
+
+.typing-stats span {
+    color: #aaa;
+    font-size: 13px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    border-color: #a855f7;
+    box-shadow:0 0 30px rgba(168, 85, 247, 0.3);
+}
+
+.contact-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    color: #e9d5ff;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: #aaa;
+}
+
+
+
+/* BUTTERFLY CURSOR */
+.butterfly {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999;
+    font-size: 28px;
+    line-height: 1;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 0 8px #c084fc);
+    transition: none;
+    display: block;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top:1px solid rgba(255, 255, 255, 0.08);
+    color: #888;
+    line-height: 2;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+    .nav-links {gap: 12px;}
+    .nav-links a {font-size: 12px;}
+    .accounts-grid {grid-template-columns:repeat(2, 1fr);}
+    .projects-grid {grid-template-columns:repeat(2, 1fr);}
+    .study-grid {grid-template-columns:repeat(2, 1fr);}
+}
+
+
+@media (max-width: 750px) {
+    .navbar {flex-direction: column;gap: 15px;}
+    .nav-links {
+        overflow-x: auto;
+        width: 100%;
+        justify-content: flex-start;
+        padding-bottom: 5px;
+    }
+    .nav-links a {white-space: nowrap;}
+    .hero {padding-top: 170px;}
+    .about-container {grid-template-columns: 1fr;}
+    .accounts-grid,
+    .skills-grid,
+    .projects-grid,
+    .study-grid,
+    .contact-grid {grid-template-columns: 1fr;}
+    .about-info {grid-template-columns: 1fr 1fr;}
+    .section-title {font-size: 35px;}
+    .typing-stats {gap: 25px;}
+}
+
+@media (max-width: 500px) {
+    .about-info {grid-template-columns: 1fr;}
+    .hero h1 {font-size: 55px;}
+    .typing-role {font-size: 20px;}
+    .profile-img {
+        width: 130px;
+        height: 130px;
+    }
+    #gameArea {height: 350px;}
+}
+
+/* FINAL TYPING LAB OVERFLOW FIX */
+.typing-test-section,
+.typing-test-container,
+.typing-toolbar,
+.typing-bottom {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.typing-test-container {
+    overflow: hidden;
+}
+
+.monkey-typing-text {
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.monkey-typing-text .letter {
+    display: inline;
+}
+
+/* Keep the typing section from causing page-wide horizontal scrolling */
+html,
+body {
+    max-width: 100%;
+    overflow-x: clip;
+}
