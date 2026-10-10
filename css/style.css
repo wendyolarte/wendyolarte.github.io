@@ -35,7 +35,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 1000;
     background: #0b0614;
     backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -1186,5 +1186,10 @@ body {
     img,
     canvas {
         max-width: 75%;
+    }
+
+    /* Leave space for the fixed navbar */
+    #home {
+        padding-top: 20px;
     }
 }
