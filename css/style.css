@@ -6,7 +6,6 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
@@ -15,12 +14,9 @@ body {
         radial-gradient(circle at top left, rgba(168, 85, 247, 0.25), transparent 35%),
         radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.15), transparent 35%),
         #10051f;
-
     color: white;
     min-height: 100vh;
-    overflow-x: hidden;
     max-width: 75%;
-    overflow-x: hidden;
 }
 
 .conainer {
