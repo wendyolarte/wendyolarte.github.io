@@ -50,7 +50,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
 }
 
 .logo {
@@ -1143,16 +1142,14 @@ body {
 /* FIX MOBILE SCREEN WIDTH AND NAVBAR */
 @media screen and (max-width: 768px) {
 
-    * {
-        box-sizing: border-box;
-    }
+    * {box-sizing: border-box;}
 
     html,
     body {
         width: 100%;
         max-width: 100%;
         margin: 0;
-        padding: 0;
+        padding: 20px;
         overflow-x: hidden;
     }
 
@@ -1193,6 +1190,6 @@ body {
 
     /* Leave space for the fixed navbar */
     #home {
-        padding-top: 75px;
+        padding-top: 20px;
     }
 }
