@@ -16,7 +16,7 @@ body {
         #10051f;
     color: white;
     min-height: 100vh;
-    max-width: 75%;
+    max-width: 50%;
 }
 
 .conainer {
@@ -28,7 +28,6 @@ body {
 /* =========================
    NAVIGATION
 ========================= */
-
 header {
     position: fixed;
     top: 0;
@@ -41,10 +40,9 @@ header {
 }
 
 .navbar {
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
     padding: 20px 30px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,7 +82,7 @@ header {
 ========================= */
 
 .section {
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
     padding: 110px 30px;
 }
