@@ -343,7 +343,9 @@ if (typingRole) {
         "an IT Student",
         "a Developer",
         "a Designer",
-        "a Tech Enthusiast"
+        "a Tech Girly",
+        "a Coder",
+        "a Programmer",
     ];
 
     let roleIndex = 0;
