@@ -1057,6 +1057,8 @@ header {
 ========================= */
 
 footer {
+    width: 100%;
+    max-width: none;
     text-align: center;
     padding: 40px 20px;
     border-top:1px solid rgba(255, 255, 255, 0.08);
