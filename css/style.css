@@ -1146,11 +1146,8 @@ body {
 
     html,
     body {
-        width: 100%;
-        max-width: 100%;
         margin: 0;
-        padding: 20px;
-        overflow-x: hidden;
+        padding: 0;
     }
 
     body {
