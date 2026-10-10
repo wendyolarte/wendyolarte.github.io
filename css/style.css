@@ -42,10 +42,11 @@ header {
 }
 
 .navbar {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 90%;
     margin: auto;
     padding: 20px 30px;
-
+    padding-top: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
