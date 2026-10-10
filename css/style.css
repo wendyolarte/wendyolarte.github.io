@@ -35,8 +35,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
-    background: rgba(16, 5, 31, 0.75);
+    z-index: 9999;
+    background: #0b0614;
     backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
