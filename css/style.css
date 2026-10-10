@@ -1187,9 +1187,4 @@ body {
     canvas {
         max-width: 75%;
     }
-
-    /* Leave space for the fixed navbar */
-    #home {
-        padding-top: 20px;
-    }
 }
