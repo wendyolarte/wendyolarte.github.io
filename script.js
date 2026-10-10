@@ -1,4 +1,3 @@
-
 /* =========================
    BUTTERFLY CURSOR
 ========================= */
@@ -343,6 +342,8 @@ if (typingRole) {
         "an IT Student",
         "a Developer",
         "a Designer",
+        "a Web Developer",
+        "a Tech Girly",
         "a Coder",
         "a Programmer",
     ];
@@ -414,7 +415,13 @@ if (
         "keyboard", "improve", "build", "programming",
         "digital", "student", "progress", "imagine",
         "success", "coding", "javascript", "developer",
-        "learning", "project", "algorithm", "solution"
+        "learning", "project", "algorithm", "solution",
+        "innovation", "performance", "optimization", "interface",
+        "experience", "application", "framework", "database",
+        "functionality", "responsiveness", "accessibility", "security",
+        "scalability", "integration", "collaboration", "automation",
+        "analytics", "visualization", "deployment", "maintenance",
+        "customization", "personalization", "interaction",
     ];
 
     let selectedTime = 15;
