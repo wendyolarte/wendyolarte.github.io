@@ -1161,12 +1161,12 @@ body {
     /* Keep navbar visible while scrolling */
     header {
         position: relative;
-        top: 0;
+        top: 50px;
         left: 0;
         right: 0;
         width: 100%;
         max-width: 100%;
-        margin: 0;
+        margin: 50px;
         z-index: 9999;
         transform: none;
     }
