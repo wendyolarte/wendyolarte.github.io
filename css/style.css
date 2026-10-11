@@ -59,17 +59,16 @@ header {
     right: 0;
     width: 100%;
     max-width: 100%;
-    margin: 0;
+    margin: 100%;
     z-index: 1000;
-    background: rgba(11, 6, 20, 0.96);
+    background: rgba(51, 29, 93, 0.96);
     backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .navbar {
-    position: center;
-    width: 50%;
-    max-width: 50%;
+    width: 90%;
+    max-width: 90%;
     min-width: 0;
     margin: 0 auto;
     padding: 12px 20px;
