@@ -67,6 +67,8 @@ header {
     max-width: 100%;
     margin: 0;
     z-index: 1000;
+    left: 0;
+    right: 0;
     background: rgba(11, 6, 20, 0.96);
     backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -152,7 +154,10 @@ header {
 .hero {
     width: 100%;
     max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
     min-height: 100vh;
+    margin: 0 auto;
     min-height: calc(100vh - 70px);
     display: flex;
     justify-content: center;
