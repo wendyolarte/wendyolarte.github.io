@@ -27,9 +27,8 @@ body {
         radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.15), transparent 35%),
         #10051f;
     color: white;
-    overflow-x: clip;
-    margin: 0;
-    padding: 0 12px;
+    overflow-x: hidden;
+    padding: 0;
 }
 
 .container {
@@ -62,10 +61,8 @@ a {
 ======================================== */
 
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     width: 100%;
     max-width: 100%;
     margin: 0;
@@ -77,8 +74,6 @@ header {
 
 .navbar {
     position: sticky;
-    top: 0; 
-    z-index: 1000;
     width: 100%;
     max-width: 100%;
     min-width: 0;
@@ -158,11 +153,12 @@ header {
     width: 100%;
     max-width: 100%;
     min-height: 100vh;
+    min-height: calc(100vh - 70px);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 150px 24px 60px;
+    padding: 60px 24px;
     position: relative;
 }
 
