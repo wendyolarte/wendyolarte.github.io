@@ -28,8 +28,6 @@ body {
         #10051f;
     color: white;
     overflow-x: clip;
-    padding-left: 0;
-    padding-right: 0;
 }
 
 img,
@@ -67,12 +65,11 @@ header {
 }
 
 .navbar {
-    position: relative;
     width: 100%;
     max-width: 100%;
     min-width: 0;
     margin: 0 auto;
-    padding: 12px 20px;
+    padding: 12px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
