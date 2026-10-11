@@ -28,8 +28,8 @@ body {
         #10051f;
     color: white;
     overflow-x: clip;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 img,
@@ -67,8 +67,9 @@ header {
 }
 
 .navbar {
-    width: 50%;
-    max-width: 50%;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
     min-width: 0;
     margin: 0 auto;
     padding: 12px 20px;
@@ -118,7 +119,7 @@ header {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    padding: 0px;
+    padding: 100px 24px;
 }
 
 .section-title {
