@@ -67,9 +67,9 @@ header {
 }
 
 .navbar {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
+    position: center;
+    width: 50%;
+    max-width: 50%;
     min-width: 0;
     margin: 0 auto;
     padding: 12px 20px;
