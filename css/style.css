@@ -28,6 +28,7 @@ body {
         #10051f;
     color: white;
     overflow-x: clip;
+    margin-top: 80px; /* Adjust this value based on the height of your fixed header */
 }
 
 img,
