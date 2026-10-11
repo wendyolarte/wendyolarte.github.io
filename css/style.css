@@ -61,7 +61,7 @@ header {
     max-width: 100%;
     margin: 100%;
     z-index: 1000;
-    background: rgba(51, 29, 93, 0.96);
+    background: rgba(11, 6, 20, 0.96);
     backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
