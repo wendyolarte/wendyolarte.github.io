@@ -65,11 +65,12 @@ header {
 }
 
 .navbar {
+    position: relative;
     width: 100%;
     max-width: 100%;
     min-width: 0;
     margin: 0 auto;
-    padding: 0px;
+    padding: 12px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
